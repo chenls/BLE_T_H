@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">环境监控</string>
+    <string name="Sign_out">"程序后台运行中\n断开连接后退出"</string>
+    <string name="no_device">没有找到任何设备，请重试！</string>
+    <string name="select_device">请选择一个设备</string>
+    <string name="scanning">扫描中…</string>
+    <string name="disconnect">断开</string>
+    <string name="connect">连接</string>
+    <string name="paired">paired</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+    <string name="scan">扫描</string>
+    <string name="cancel">取消</string>
+    <string name="about_BLE">室外环境监控系统</string>
+    <string name="connect_bluetooth">连接设备</string>
+    <string name="bluetooth_close">" 蓝牙:未打开"</string>
+    <string name="bluetooth_open">" 蓝牙:已打开"</string>
+    <string name="setting">设置</string>
+    <string name="bluetooth_name">" 设备:%s"</string>
+    <string name="bluetooth_null">" 设备:空"</string>
+    <string name="battery">" 电量:空"</string>
+    <string name="battery_value">" 电量:%s"</string>
+    <string name="rssi">" Rssi:%sdBm"</string>
+    <string name="rssi_null">" Rssi:空"</string>
+    <string name="no_bt">" 设备:空"</string>
+    <string name="autoConnect">自动连接</string>
+    <string name="about_sl">\t\t系统采用CC2540蓝牙模块作为控制装置的智能部件，采用传感器检测相应环境物理量，通过蓝牙模块将数据传输至手机端，并可以通过手机端对数据进行实时环境监控。</string>
+    <string name="isAutoConnect">否</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="bt_disconnect">设备已断开</string>
+    <string name="auto_connect_not_success">自动连接设备未成功</string>
+    <string name="auto_success">已自动连接上次连接设备</string>
+    <string name="try_re_connect">正在尝试重新连接</string>
+    <string name="bt_initialize_fail">蓝牙初始化失败</string>
+    <string name="illumination">光感:%d</string>
+    <string name="humidity">湿度:%d%%</string>
+    <string name="temperature">温度:%d℃</string>
+    <string name="Rssi">"Rssi = %s"</string>
+    <string name="title_temperature">温度报警</string>
+    <string name="temperature_value">%1$d℃~%2$d℃</string>
+    <string name="title_humidity">湿度报警</string>
+    <string name="humidity_value">%1$d%%~%2$d%%</string>
+    <string name="title_illumination">光照报警</string>
+    <string name="threshold_value">阈值</string>
+    <string name="alarm">警告！！</string>
+    <string name="status">已连接</string>
+
+</resources>
