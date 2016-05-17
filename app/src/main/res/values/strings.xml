@@ -58,5 +58,4 @@
     <string name="humidity_value">%1$d%%~%2$d%%</string>
     <string name="alarm">警告！！</string>
     <string name="status">已连接</string>
-
 </resources>
