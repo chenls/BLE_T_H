@@ -39,7 +39,7 @@
     <string name="rssi_null">" Rssi:空"</string>
     <string name="no_bt">" 设备:空"</string>
     <string name="autoConnect">自动连接</string>
-    <string name="about_sl">\t\t系统采用CC2540蓝牙模块作为控制装置的智能部件，采用传感器检测相应环境物理量，通过蓝牙模块将数据传输至手机端，并可以通过手机端对数据进行实时环境监控。</string>
+    <string name="about_sl">\t\t系统采用单片机作为主控芯片，使用CC2541蓝牙模块使单片机与手机无线通信，采用传感器检测相应环境物理量，通过蓝牙4.0将数据传输至手机端，并可以通过手机端对数据进行实时环境监控。</string>
     <string name="isAutoConnect">否</string>
     <string name="yes">是</string>
     <string name="no">否</string>
