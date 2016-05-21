@@ -210,9 +210,9 @@ public class UartService extends Service {
                 temp.append(stringBuilder.toString()).append(" ");
                 if ("A".equals(stringBuilder.toString())) { //表示已完整接受一次
                     String string = temp.toString();
-                    if (string.length() == 38) {
-                        String t = String.valueOf(string.charAt(7)) + String.valueOf(string.charAt(10));
-                        String h = String.valueOf(string.charAt(27)) + String.valueOf(string.charAt(30));
+                    if (string.length() == 34) {             //确保收到的数据长度正常
+                        String t = String.valueOf(string.charAt(7)) + String.valueOf(string.charAt(10)); //取出温度数据
+                        String h = String.valueOf(string.charAt(25)) + String.valueOf(string.charAt(28));//取出湿度数据
                         int[] int_array = new int[2];
                         int_array[0] = Integer.parseInt(h);
                         int_array[1] = Integer.parseInt(t);

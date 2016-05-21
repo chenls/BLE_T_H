@@ -14,7 +14,6 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,8 +41,6 @@ public class DeviceListActivity extends Activity {
     private BluetoothAdapter mBluetoothAdapter;
     private SharedPreferences sharedPreferences;
     private TextView mEmptyList;
-    private static final String TAG = "myLog";
-
     private List<BluetoothDevice> deviceList;
     private DeviceAdapter deviceAdapter;
     private Map<String, Integer> devRssiValues;
@@ -60,7 +57,6 @@ public class DeviceListActivity extends Activity {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         }
-        Log.d(TAG, "onCreate");
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.device_list);
@@ -111,7 +107,6 @@ public class DeviceListActivity extends Activity {
 
     private void populateList() {
         /* Initialize device list container */
-        Log.d(TAG, "populateList");
         deviceList = new ArrayList<>();
         deviceAdapter = new DeviceAdapter(this, deviceList);
         devRssiValues = new HashMap<>();
@@ -314,7 +309,6 @@ public class DeviceListActivity extends Activity {
             tv_name.setText(device.getName());
             tv_add.setText(device.getAddress());
             if (device.getBondState() == BluetoothDevice.BOND_BONDED) {
-                Log.i(TAG, "device::" + device.getName());
                 tv_name.setTextColor(Color.WHITE);
                 tv_add.setTextColor(Color.WHITE);
                 tv_paired.setTextColor(Color.GRAY);
