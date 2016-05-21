@@ -172,9 +172,13 @@ public class WelcomeActivity extends Activity {
                 handler.postDelayed(this, TIME);
                 animation.startAnimation(myAnimation_Scale);
                 if (!isStartScan) {
-                    boolean isSuccessfully;
+                    boolean isSuccessfully = false;
                     //noinspection deprecation
-                    isSuccessfully = mBluetoothAdapter.startLeScan(mLeScanCallback);
+                    try {
+                        isSuccessfully = mBluetoothAdapter.startLeScan(mLeScanCallback);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     if (isSuccessfully) {
                         isStartScan = true;
                     }
